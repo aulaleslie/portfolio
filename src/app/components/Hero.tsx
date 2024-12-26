@@ -4,7 +4,7 @@ export default function Hero() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
                 {/* Heading */}
                 <h1 className="text-4xl sm:text-5xl font-bold mb-4">
-                    Hi, I'm Leslie Aula 👋
+                    Hi, I&apos;m Leslie Aula 👋
                 </h1>
 
                 {/* Tagline */}
