@@ -30,7 +30,7 @@ const selectionSort = (arr: number[]): number[] => {
 const insertionSort = (arr: number[]): number[] => {
     const sorted = [...arr];
     for (let i = 1; i < sorted.length; i++) {
-        let key = sorted[i];
+        const key = sorted[i];
         let j = i - 1;
         while (j >= 0 && sorted[j] > key) {
             sorted[j + 1] = sorted[j];
