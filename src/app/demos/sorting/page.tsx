@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import axios from "axios";
-import logger from "@/utils/logger";
 
 export default function SortingDemo() {
     const [sequence, setSequence] = useState<string>(""); // User input sequence
@@ -52,7 +51,7 @@ export default function SortingDemo() {
             const response = await axios.post("/api/sort", { sequence: items });
             setResults(response.data.results);
         } catch (err) {
-            logger.error({ error: err }, "An error occurred");
+            console.log(err);
             setError("An error occurred while sorting. Please try again.");
         } finally {
             setLoading(false); // Hide loading indicator
