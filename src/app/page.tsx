@@ -1,11 +1,12 @@
 import AboutMe from "./components/AboutMe";
 import Hero from "./components/Hero";
+import Highlights from "./components/Highlights";
 
 export default function Home() {
   return (
     <div>
       <Hero />
-      <AboutMe />
+      <Highlights />
       {/* Add more sections here */}
     </div>
   );

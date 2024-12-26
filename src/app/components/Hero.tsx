@@ -21,7 +21,7 @@ export default function Hero() {
                         Explore Demos
                     </a>
                     <a
-                        href="#projects"
+                        href="/projects"
                         className="px-6 py-3 border border-blue-500 text-blue-500 rounded-md hover:bg-blue-500 hover:text-white"
                     >
                         View Projects
