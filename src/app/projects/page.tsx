@@ -10,7 +10,7 @@ export default function ProjectsPage() {
             title: "Dan Liris Management System",
             description: "Developed a robust ERP system for PT Dan Liris, migrating from MEAN stack to React, .NET Core, and SQL Server. Handled CI/CD and database migration from MongoDB to SQL Server.",
             techStack: ["Aurelia.js", "React.js", ".NET Core", "SQL Server", "Azure"],
-            image: null, // Image URL goes here
+            image: "https://karir.batangkab.go.id/storage/company_logo/dd99a4af-1081-4caa-9d20-67d793a22626.jpg", // Image URL goes here
             demoLink: null,
             codeLink: "https://github.com/leslieaula/dl-ui",
         },
@@ -18,7 +18,7 @@ export default function ProjectsPage() {
             title: "Bateeq Management System",
             description: "Maintained and enhanced the system with similar improvements as the Dan Liris Management System.",
             techStack: ["Aurelia.js", "React.js", ".NET Core", "SQL Server", "Azure"],
-            image: null, // Image URL goes here
+            image: "https://pakuwonmall.com/uploads/tenant/bateeq.jpg", // Image URL goes here
             demoLink: null,
             codeLink: "https://github.com/leslieaula/bateeq-ui",
         },
@@ -26,7 +26,7 @@ export default function ProjectsPage() {
             title: "Dan Liris Inventory System",
             description: "Developed mobile and desktop apps for inventory management, integrated with the Dan Liris Management System.",
             techStack: ["Android (Java)", "WPF", ".NET Core", "SQL Server", "Azure"],
-            image: null, // Image URL goes here
+            image: "https://karir.batangkab.go.id/storage/company_logo/dd99a4af-1081-4caa-9d20-67d793a22626.jpg", // Image URL goes here
             demoLink: null,
             codeLink: null,
         },
@@ -34,7 +34,7 @@ export default function ProjectsPage() {
             title: "Dan Liris HR System",
             description: "Led the development of a no-touch attendance system during COVID-19 using AWS Rekognition and GCP Maps.",
             techStack: ["React Native", ".NET Core", "SQL Server", "AWS", "GCP", "Azure"],
-            image: null, // Image URL goes here
+            image: "https://karir.batangkab.go.id/storage/company_logo/dd99a4af-1081-4caa-9d20-67d793a22626.jpg", // Image URL goes here
             demoLink: null,
             codeLink: null,
         },
@@ -42,7 +42,7 @@ export default function ProjectsPage() {
             title: "Cycle Promotion Plan",
             description: "Accelerated development to meet deadlines as part of a 'firefighting' team.",
             techStack: ["Angular", ".NET Framework", "SQL Server", "Azure"],
-            image: null, // Image URL goes here
+            image: "https://upload.wikimedia.org/wikipedia/id/c/c2/HM_Sampoerna_logo1.png", // Image URL goes here
             demoLink: null,
             codeLink: null,
         },
@@ -50,7 +50,7 @@ export default function ProjectsPage() {
             title: "Centralized Trading Platform",
             description: "Led Kubernetes cluster setup and PostgreSQL HA configuration. Participated in backend development and established CI/CD pipelines.",
             techStack: ["Kubernetes", "Golang", "PostgreSQL", "Redis", "AMQ"],
-            image: null, // Image URL goes here
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7ZgIU_PtRlEF5Pi3OyXd5JNL4TDGCNcluOg&s", // Image URL goes here
             demoLink: null,
             codeLink: null,
         },
@@ -58,7 +58,7 @@ export default function ProjectsPage() {
             title: "2K Identity SSO & OAuth Service",
             description: "Improved search performance by 3x and developed a banning mechanism for 2K Games' high-concurrency authentication system.",
             techStack: ["Java Spring Boot", "Golang", "MongoDB", "Redis", "Kafka", "AWS"],
-            image: null, // Image URL goes here
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu0GBzIqAp-EhCYoBoNdMw45GjO5HJ4OmqoA&s", // Image URL goes here
             demoLink: "https://portal.2k.com/",
             codeLink: null,
         },
@@ -66,7 +66,7 @@ export default function ProjectsPage() {
             title: "Muunship Grid Trading Bot",
             description: "Extended an existing Grid Trading Bot backend service with integrations for Bybit, Binance, and Phemex.",
             techStack: ["Golang", "Redis", "Oracle DB"],
-            image: null, // Image URL goes here
+            image: "https://lh3.googleusercontent.com/1-5kr0tmcBuJDC2xtfFdd7uVU_feU6F5zIXe_etv9tX20B6GTfJuuPgEYylUbVh3mDYLiEKOnykiL5iCtNCyhH5LmO8=s1280-w1280-h800", // Image URL goes here
             demoLink: null,
             codeLink: null,
         },
@@ -74,7 +74,7 @@ export default function ProjectsPage() {
             title: "NeuroAEye",
             description: "Refactored the codebase and wrote unit tests. Integrated Stripe as a payment gateway.",
             techStack: ["Golang", "Redis", "PostgreSQL"],
-            image: null, // Image URL goes here
+            image: "https://neuroaeye.com/wp-content/uploads/2024/09/head-logo.png", // Image URL goes here
             demoLink: null,
             codeLink: null,
         },
