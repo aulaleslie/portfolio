@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation"; // Import hook to get the current path
+import Link from "next/link";
 
 export default function Navbar() {
     const [activeSection, setActiveSection] = useState<string>("");
@@ -29,38 +30,38 @@ export default function Navbar() {
     return (
         <header className="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 shadow">
             <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-                <a href="/" className="text-2xl font-bold">
+                <Link href="/" className="text-2xl font-bold">
                     Leslie Aula
-                </a>
+                </Link>
                 <div className="space-x-4">
                     {/* About Me Link */}
-                    <a
+                    <Link
                         href="#about-me"
                         className={`hover:text-blue-500 ${pathname === "/" && activeSection === "about-me"
-                                ? "text-blue-500 font-bold"
-                                : ""
+                            ? "text-blue-500 font-bold"
+                            : ""
                             }`}
                     >
                         About Me
-                    </a>
+                    </Link>
 
                     {/* Projects Link */}
-                    <a
+                    <Link
                         href="/projects"
                         className={`hover:text-blue-500 ${pathname === "/projects" ? "text-blue-500 font-bold" : ""
                             }`}
                     >
                         Projects
-                    </a>
+                    </Link>
 
                     {/* Demos Link */}
-                    <a
+                    <Link
                         href="/demos"
                         className={`hover:text-blue-500 ${pathname === "/demos" ? "text-blue-500 font-bold" : ""
                             }`}
                     >
                         Demos
-                    </a>
+                    </Link>
                 </div>
             </nav>
         </header>

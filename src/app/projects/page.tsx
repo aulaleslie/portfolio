@@ -1,6 +1,7 @@
 "use client";
 
 import Head from "next/head";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function ProjectsPage() {
@@ -80,7 +81,7 @@ export default function ProjectsPage() {
     ];
 
     const defaultImage =
-        "https://via.placeholder.com/300x200.png?text=No+Image+Available";
+        "https://via.placeholder.com/300x200.png";
 
     const [selectedTech, setSelectedTech] = useState<string | null>(null);
 
@@ -157,9 +158,11 @@ export default function ProjectsPage() {
                             >
                                 {/* Project Image */}
                                 <div className="mb-4">
-                                    <img
+                                    <Image
                                         src={project.image || defaultImage}
                                         alt={project.title}
+                                        width={300} // Provide width
+                                        height={200} // Provide height
                                         className="w-full h-48 object-cover rounded-lg"
                                     />
                                 </div>
