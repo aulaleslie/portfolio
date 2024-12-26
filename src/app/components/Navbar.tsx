@@ -62,6 +62,15 @@ export default function Navbar() {
                     >
                         Demos
                     </Link>
+
+                    {/* CCTV Link */}
+                    <Link
+                        href="/cctv"
+                        className={`hover:text-blue-500 ${pathname === "/cctv" ? "text-blue-500 font-bold" : ""
+                            }`}
+                    >
+                        CCTV
+                    </Link>
                 </div>
             </nav>
         </header>
