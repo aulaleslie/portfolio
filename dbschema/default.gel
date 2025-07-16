@@ -1,0 +1,42 @@
+scalar type default::MatchFormat extending enum<"Single", "HomeAway">;
+scalar type default::ScoringMode extending enum<"SumScore", "SetWins">;
+
+type default::Player {
+  required property name -> str {
+    constraint exclusive;
+  };
+}
+
+type default::Competition {
+  required name: str;
+  required created_at: datetime {
+    default := datetime_current()
+  };
+  required set_count: int16;
+  required match_format: default::MatchFormat;
+  required scoring_mode: default::ScoringMode;
+
+  multi participants: default::Player;
+  multi matches: default::`Match`;
+}
+
+type default::`Match` {
+  required competition: default::Competition;
+  required player_a: default::Player;
+  required player_b: default::Player;
+  required created_at: datetime {
+    default := datetime_current()
+  };
+
+  multi sets: default::MatchSet;
+
+  optional winner: default::Player;
+  optional is_draw: bool;
+}
+
+type default::MatchSet {
+  required `match`: default::`Match`;
+  required set_number: int16;
+  required score_a: int16;
+  required score_b: int16;
+}

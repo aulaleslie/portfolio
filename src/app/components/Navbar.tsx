@@ -71,6 +71,14 @@ export default function Navbar() {
                     >
                         CCTV
                     </Link>
+
+                    <Link
+                        href="/competition"
+                        className={`hover:text-blue-500 ${pathname === "/competition" ? "text-blue-500 font-bold" : ""
+                            }`}
+                    >
+                        Competition
+                    </Link>
                 </div>
             </nav>
         </header>
