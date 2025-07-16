@@ -19,9 +19,9 @@ export type CompetitionWithScoring = CompetitionBase & {
 
 type FullCompetition = CompetitionWithFormat & CompetitionWithScoring;
 
-
 export async function getCompetitions(): Promise<FullCompetition[]> {
     return await edge
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         .select(edge.Competition, (comp) => ({
             id: true,
             name: true,
@@ -35,6 +35,7 @@ export async function getCompetitions(): Promise<FullCompetition[]> {
 
 export async function generateMatches(competitionId: string) {
     const comp = await edge
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         .select(edge.Competition, (c) => ({
             id: true,
             match_format: true,

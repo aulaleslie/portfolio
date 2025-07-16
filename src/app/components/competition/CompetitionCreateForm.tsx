@@ -64,6 +64,7 @@ export default function CompetitionCreateForm() {
             />
             <select
                 value={matchFormat}
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 onChange={(e) => setMatchFormat(e.target.value as any)}
                 className="w-full border p-2 rounded"
             >
@@ -75,6 +76,7 @@ export default function CompetitionCreateForm() {
             </select>
             <select
                 value={scoringMode}
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 onChange={(e) => setScoringMode(e.target.value as any)}
                 className="w-full border p-2 rounded"
             >

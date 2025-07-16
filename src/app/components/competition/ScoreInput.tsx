@@ -33,7 +33,9 @@ export default function ScoreInput() {
     const [selectedId, setSelectedId] = useState<string>('');
     const [matches, setMatches] = useState<MatchInfo[]>([]);
     const [scores, setScores] = useState<Record<string, number[][]>>({});
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [setCount, setSetCount] = useState<number>(3);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [scoringMode, setScoringMode] = useState<'SetWins' | 'SumScore'>('SetWins');
 
     useEffect(() => {

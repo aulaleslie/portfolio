@@ -4,6 +4,7 @@ import { client, edge } from "@/lib/edgedb";
 
 export async function getCompetitions() {
     return await edge
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         .select(edge.Competition, (comp) => ({
             id: true,
             name: true,

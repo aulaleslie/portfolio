@@ -27,6 +27,7 @@ export default function MatchGeneration() {
         try {
             const total = await generateMatches(selectedId);
             setStatus(`✅ ${total} match(es) generated`);
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
         } catch (err: any) {
             console.error('Error generating matches', err);
             setStatus(err.message || '❌ Failed to generate matches');
